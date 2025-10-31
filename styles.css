@@ -1,0 +1,96 @@
+/* 面板样式 */
+#duplicate-checker-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #c026d3, #14b8a6) !important; /* 面板背景渐变 */
+    color: #fff !important;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 15px;
+    z-index: 10000;
+    min-width: 110px;
+    cursor: move;
+    user-select: none;
+    transition: background 0.3s ease;
+}
+
+/* 面板头部 */
+#duplicate-checker-panel #dc-panel-header {
+    font-weight: bold;
+    margin-bottom: 2px;
+    cursor: move;
+    font-size: 15px;
+    color: #000 !important;
+}
+
+/* 内部 div 间距 */
+#duplicate-checker-panel div {
+    margin-bottom: 0;
+}
+
+/* 标签 */
+#duplicate-checker-panel label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+#duplicate-checker-panel input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+/* 按钮统一大小，浅色渐变 */
+#duplicate-checker-panel button {
+    border: none;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    color: #000; /* 深色字体，保证可读性 */
+    background-size: 200% 200%;
+}
+
+/* 清除历史按钮：浅绿色渐变 */
+#duplicate-checker-panel #clear-history {
+    background: linear-gradient(135deg, #a8e6a3, #d4f7d4);
+}
+
+/* 添加10行按钮：浅蓝色渐变 */
+#duplicate-checker-panel #add-ten-rows {
+    background: linear-gradient(135deg, #90caff, #b3e0ff);
+}
+
+/* 最小化面板按钮：浅橙色渐变 */
+#duplicate-checker-panel #minimize-panel {
+    background: linear-gradient(135deg, #ffd28a, #ffe0b3);
+}
+
+/* 悬停效果可选 */
+#duplicate-checker-panel button:hover {
+    filter: brightness(1.1);
+}
+
+/* 显示最小化按钮 */
+.show-button {
+    position: fixed;
+    background: linear-gradient(135deg, #ffd28a, #ffe0b3);
+    color: #000;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 10001;
+}
+.show-button:hover {
+    filter: brightness(1.1);
+}

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "URL查重检测",
+  "version": "1.2",
+  "description": "用于检测和管理表单中的重复内容。",
+  "author": "艾合",
+  "content_scripts": [
+    {
+      "matches": ["https://mate-label.appendata.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": []
+}
